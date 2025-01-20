@@ -1,0 +1,393 @@
+#_muvue, body, html {
+    background: #101114 !important;
+    width: 100% !important;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !important;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    font-family: system-ui,-apple-system,Arial,sans-serif;
+}
+
+body, html {
+    font-size: .12rem;
+}
+
+html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+}
+
+.lay-default {
+    min-height: 100%;
+}
+
+.page {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+    min-width: 1160px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-inner {
+    margin: 0 auto;
+    min-width: 1160px;
+    width: 1160px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pot {
+    cursor: pointer;
+}
+
+.tell {
+    justify-content: flex-start;
+}
+
+.header, .tell {
+    align-items: center;
+    display: flex;
+}
+
+.logo-icon {
+    height: 36px;
+    margin-right: 4px;
+    width: 32px;
+}
+
+.logo-txt {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.input-box {
+    background: #fff3;
+    border-radius: 8px;
+    height: 40px;
+    padding: 16px;
+    position: relative;
+    width: 360px;
+}
+
+.search-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.search-input {
+    background: none;
+    border: none;
+    color: #fff9;
+    flex-grow: 1;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
+    outline: none;
+}
+
+input {
+    user-select: auto;
+}
+
+.section {
+    margin-top: 0 !important;
+    min-height: 700px;
+    min-width: 1260px;
+    padding: 32px 50px 0;
+    width: 1260px;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.movie-box {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.logo, .mflex {
+    align-items: flex-start;
+}
+
+.width-100 {
+    min-width: 100%;
+}
+
+.row-list {
+    margin-right: 16px;
+    min-width: 800px;
+}
+
+.columnflex {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-title {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.inbetween {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary-title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;  
+}
+
+.scroll {
+    overflow: auto;
+    scrollbar-width: none;
+    width: 100%;
+    -ms-overflow-style: none;
+}
+
+.a-movie {
+    margin-right: 10px;
+}
+
+.a-img-box {
+    padding-top: 150%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.cover-mask {
+    background: #0003;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.banner, .lazy-img {
+    height: 100%;
+    width: 100%;
+}
+
+.lazy-img {
+    background: #2b2e39;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.lazy-img.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.a-rate-box {
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,.5));
+    border-radius: 0 0 8px 8px;
+    bottom: 0;
+    height: 48px;
+    left: 0;
+    padding-bottom: 8px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.flex-outline {
+    align-items: flex-end;
+}
+
+.tit-box {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.a-title {
+    color: #fff;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    width: 150px;
+}
+
+.a-title.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis {
+    word-break: break-all;
+}
+
+.l, .r {
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+}
+
+.r {
+    right: 0;
+    transform: translate3d(50%,-50%,0);
+}
+
+.arrow-box {
+    background: #00000080;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.footer {
+    background: #28292e;
+    min-width: 1160px;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.footer-inner {
+    min-width: 1160px;
+    width: 1160px;
+}
+
+.center-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-footer-mid {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.staticbetween {
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+}
+
+.columnstatic {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-logo {
+    height: 36px;
+    margin-right: 4px;
+    width: 32px;
+}
+
+.privacy {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 48px;
+    margin-top: 12px;
+}
+
+.footer-desc, .privacy {
+    color: #fffc;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.secondary {
+    padding-top: 16px;
+}
+
+.community {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.contact {
+    color: #fff;
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.footer-desc {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.muvue-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.columnflex.a-movie {
+    flex: 1 1 200px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .columnflex.a-movie {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
